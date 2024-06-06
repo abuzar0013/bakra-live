@@ -23,7 +23,7 @@ const ImageModal = ({ images, isOpen, onRequestClose }) => {
             <button onClick={onRequestClose} className="close-button">&times;</button>
             <div className="modal-content">
                 <button onClick={prevImage} className="prev-button">&#9664;</button>
-                <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="modal-image" />
+                <img src={images[currentImageIndex]} alt={`Slide ${currentImageIndex + 1}`} className="modal-image" />
                 <button onClick={nextImage} className="next-button">&#9654;</button>
             </div>
         </Modal>
