@@ -54,10 +54,11 @@
     color: var(--bg-color);
     background: #000;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: background 0.3s ease;
-    margin-right: 10px;
+    margin-right: 15px;
+    margin-top: 5px;
 }
 
 .buy-now-button:disabled {
@@ -144,3 +145,7 @@
 .next-button:hover {
     color: #24d521;
 }
+.post-details {
+    margin-bottom: 16px;
+}
+
