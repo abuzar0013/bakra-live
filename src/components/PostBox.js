@@ -11,6 +11,7 @@ const PostBox = ({
     breed,
     location,
     isAvailable,
+    seller_number,
 }) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -20,7 +21,7 @@ const PostBox = ({
     const sendMessage = () => {
         const message = `Hello, I am interested in your ${breed} ${category} which is priced at ${price}. Please contact me.
         Id=${id}`;
-        const whatsappUrl = `https://wa.me/919310833991?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/${seller_number}?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     };
 

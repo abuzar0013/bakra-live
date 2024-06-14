@@ -20,6 +20,7 @@ const Posts = ({ filter }) => {
           breed: post.breed,
           location: post.location,
           isAvailable: post.is_available,
+          seller_number: post.seller_number,
         }));
         setPosts(formattedData);
       } catch (error) {
